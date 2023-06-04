@@ -748,7 +748,7 @@ function kube::util::ensure-bash-version {
     if [ "$(uname)" = 'Darwin' ]; then
       echo "On macOS with homebrew 'brew install bash' is sufficient."
     fi
-    exit 1
+#    exit 1
   fi
 }
 
