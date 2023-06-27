@@ -70,6 +70,7 @@ func (kl *Kubelet) RunOnce(updates <-chan kubetypes.PodUpdate) ([]RunPodResult, 
 
 // runOnce runs a given set of pods and returns their status.
 func (kl *Kubelet) runOnce(ctx context.Context, pods []*v1.Pod, retryDelay time.Duration) (results []RunPodResult, err error) {
+	// run asynchronous to generate result
 	ch := make(chan RunPodResult)
 	admitted := []*v1.Pod{}
 	for _, pod := range pods {
@@ -112,6 +113,7 @@ func (kl *Kubelet) runOnce(ctx context.Context, pods []*v1.Pod, retryDelay time.
 }
 
 // runPod runs a single pod and wait until all containers are running.
+// main entry point.
 func (kl *Kubelet) runPod(ctx context.Context, pod *v1.Pod, retryDelay time.Duration) error {
 	var isTerminal bool
 	delay := retryDelay
