@@ -1,0 +1,20 @@
+{
+  "id": "d5d15032-c5c4-4d56-8af9-d310951a48e9",
+  "tourFile": "runStatefulSet.tour",
+  "title": "run statefulSet",
+  "description": "A New Tour",
+  "steps": [
+    {
+      "title": "stateful_set.go:150",
+      "description": "statefulset启动，继承了controller的接口",
+      "file": "stateful_set.go",
+      "line": 150
+    },
+    {
+      "title": "stateful_set.go:172",
+      "description": "一直阻塞在这里",
+      "file": "stateful_set.go",
+      "line": 172
+    }
+  ]
+}

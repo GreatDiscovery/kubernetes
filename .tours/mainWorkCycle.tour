@@ -1,0 +1,20 @@
+{
+  "id": "3d923c0e-4227-400f-84a9-53a8008d267f",
+  "tourFile": "mainWorkCycle.tour",
+  "title": "MainWorkCycle",
+  "description": "A New Tour",
+  "steps": [
+    {
+      "title": "kubelet.go:926",
+      "description": "entrypoint, very important",
+      "file": "kubelet.go",
+      "line": 926
+    },
+    {
+      "title": "kubelet.go:966",
+      "description": "some kind of manager to manage all kinds of resources",
+      "file": "kubelet.go",
+      "line": 966
+    }
+  ]
+}
