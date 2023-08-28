@@ -1,0 +1,14 @@
+{
+  "id": "a22f1221-d09f-4aa8-9957-8c58953509a6",
+  "tourFile": "kube-proxy.tour",
+  "title": "kube-proxy",
+  "description": "A New Tour",
+  "steps": [
+    {
+      "title": "proxier.go:59",
+      "description": "这里k8s自定义了一批iptables的chain",
+      "file": "proxier.go",
+      "line": 59
+    }
+  ]
+}
