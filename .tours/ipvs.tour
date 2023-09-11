@@ -1,0 +1,14 @@
+{
+  "id": "5dbc420e-70cd-4ab5-9e3a-2a9a10ddbc05",
+  "tourFile": "ipvs.tour",
+  "title": "ipvs",
+  "description": "A New Tour",
+  "steps": [
+    {
+      "title": "proxier.go:920",
+      "description": "同步规则",
+      "file": "proxier.go",
+      "line": 920
+    }
+  ]
+}
