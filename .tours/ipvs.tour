@@ -9,6 +9,36 @@
       "description": "同步规则",
       "file": "proxier.go",
       "line": 920
+    },
+    {
+      "title": "proxier.go:962",
+      "description": "ivps主要更改两个表，filter和nat",
+      "file": "proxier.go",
+      "line": 962
+    },
+    {
+      "title": "proxier.go:968",
+      "description": "可以创建一个dummyAddr kube-ipvs0，把vip绑定上去",
+      "file": "proxier.go",
+      "line": 968
+    },
+    {
+      "title": "proxier.go:456",
+      "description": "初始化一个ipset",
+      "file": "proxier.go",
+      "line": 456
+    },
+    {
+      "title": "proxier.go:155",
+      "description": "根据不同类型的ip，分了几个ipset组",
+      "file": "proxier.go",
+      "line": 155
+    },
+    {
+      "title": "server.go:900",
+      "description": "这里会注册一个serviceHandler，监听所有的service变更事件",
+      "file": "server.go",
+      "line": 900
     }
   ]
 }
