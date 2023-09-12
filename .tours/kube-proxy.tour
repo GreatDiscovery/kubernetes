@@ -1,14 +1,86 @@
 {
-  "id": "a22f1221-d09f-4aa8-9957-8c58953509a6",
+  "id": "5402b0be-56c6-4cf9-951f-abf4c4b71557",
   "tourFile": "kube-proxy.tour",
   "title": "kube-proxy",
   "description": "A New Tour",
   "steps": [
     {
-      "title": "proxier.go:59",
-      "description": "这里k8s自定义了一批iptables的chain",
+      "title": "proxier.go:58",
+      "description": "k8s建立了很多自己的iptables链",
       "file": "proxier.go",
-      "line": 59
+      "line": 58
+    },
+    {
+      "title": "server_others.go:80",
+      "description": "创建kube-proxy开始",
+      "file": "server_others.go",
+      "line": 80
+    },
+    {
+      "title": "server_others.go:134",
+      "description": "判断是iptables模式还是ipvs模式",
+      "file": "server_others.go",
+      "line": 134
+    },
+    {
+      "title": "server_others.go:152",
+      "description": "所有配置信息从conf里取",
+      "file": "server_others.go",
+      "line": 152
+    },
+    {
+      "title": "server.go:331",
+      "description": "启动代理",
+      "file": "server.go",
+      "line": 331
+    },
+    {
+      "title": "proxier.go:227",
+      "description": "生成一个proxy实例来管理iptables",
+      "file": "proxier.go",
+      "line": 227
+    },
+    {
+      "title": "proxier.go:764",
+      "description": "当调用iptables-save/restore时，proxy同步iptables",
+      "file": "proxier.go",
+      "line": 764
+    },
+    {
+      "title": "proxier.go:918",
+      "description": "iptables和ipvs分别有一个该方法，用来动态的更新rule",
+      "file": "proxier.go",
+      "line": 918
+    },
+    {
+      "title": "proxier.go:460",
+      "description": "这里有一个定时任务在做同步",
+      "file": "proxier.go",
+      "line": 460
+    },
+    {
+      "title": "proxier.go:947",
+      "description": "接下来更新proxy rule",
+      "file": "proxier.go",
+      "line": 947
+    },
+    {
+      "title": "service.go:297",
+      "description": "在这里处理service，获取service的clusterIp，去创建vip",
+      "file": "service.go",
+      "line": 297
+    },
+    {
+      "title": "server.go:737",
+      "description": "这里创建了service的informer",
+      "file": "server.go",
+      "line": 737
+    },
+    {
+      "title": "interface.go:26",
+      "description": "这里定义了一堆informer",
+      "file": "interface.go",
+      "line": 26
     }
   ]
 }
